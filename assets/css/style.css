@@ -112,7 +112,7 @@ header{
     margin-top: 20px;
 }
 .banner .sliders-pointers{
-    width: 100vw;
+    width: 100%; /*No projeto original era 100vw entretanto estava causando um bug onde aparecia um espaço ao lado da barra de rolagem algumas vezes quando se atualizava a página*/
     height: 20px;
     position: absolute;
     margin-top: -50px;
@@ -171,8 +171,7 @@ header{
 .default.dark .section-body{
     color: #fff;
 }
-/*CSS de áreas epecíficas
-*/
+/*CSS de áreas epecíficas*/
 .section-aboutus{
     display: flex;
 }
@@ -191,4 +190,29 @@ header{
 .section-aboutus--right img{
     width: 470px;
     box-shadow: 0px 5px 10px #333;
+}
+
+.section-services{
+    display: flex;
+}
+.section-service{
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #333;
+    padding: 15px;
+}
+.section-services:first-child{
+    border-left: 1px solid #333;
+}
+.section-service img{
+    width: 50px;
+}
+.section-service h4{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 1,38rem;
+}
+.section-service p{
+    margin-top: 10px;
+    color: #999;
 }
