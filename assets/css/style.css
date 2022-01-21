@@ -171,6 +171,9 @@ header{
 .default.dark .section-body{
     color: #fff;
 }
+.no-padding{
+    padding-bottom: 0;
+}
 /*CSS de áreas epecíficas*/
 /*About US*/
 .section-aboutus{
@@ -367,7 +370,6 @@ header{
     font-size: 1.07rem;
     color: #999;
     margin-top: 5px;
-
 }
 .section-team--social{
     display: flex;
@@ -389,7 +391,7 @@ header{
 /*Clients*/
 .section-clients{
     overflow: hidden;
-    max-width: 730px;
+    max-width: 700px;
     margin: auto;
 }
 .section-clients .sliders{
@@ -417,6 +419,53 @@ header{
     background-color: #b28756;
 }
 .section-clients .slide{
-    width: 100%;
-    background-color: red;
+    width: 700px;
+}
+.section-clients .slidearea{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+.section-clients--avatar{
+    width: 150px;
+    height: auto;    
+}
+.section-clients--name{    
+    font-size: 1.30rem;
+    font-weight: bold;    
+    margin-top: 25px;     
+}
+.section-clients--role{
+    font-size: 1.07rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 5px;
+}
+.section-clients--quote{
+    margin: 25px 0 10px 0;
+}
+.section-clients p{
+    text-align: center;
+    color: #333;
+    line-height: 1.7rem;
+}
+.section-clients--ourclients{
+    margin-top: 30px;    
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;            
+}
+.section-clients--ourclients .clients{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    max-width: 1140px;
+}
+.section-clients--ourclients .clients img{
+    height: 40px;
 }
