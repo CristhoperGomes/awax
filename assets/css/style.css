@@ -461,11 +461,57 @@ header{
 .section-clients--ourclients .clients{
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     height: 100px;
     max-width: 1140px;
 }
 .section-clients--ourclients .clients img{
     height: 40px;
+}
+/*Price*/  
+.section-price--plans{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+.section-price--plan{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    width: 200px;
+    height: 100%;
+    padding: 20px;
+    margin-right: 20px;
+}
+.section-price--plan .plan-name{
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;    
+}
+.section-price--plan .plan-price{
+    color: #333;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+.section-price--plan .plan-price--periodicity{
+    color: #999;
+    text-transform: uppercase;
+    font-size: 0.76rem;
+    margin-top: -5px;
+}
+.section-price--plan .plan-resources{
+    color: #555;
+    font-size: 0.84rem;
+    margin-top: 15px;
+    font-weight: 600;    
+}
+.section-price--plan .plan-resources .line{
+    width: 15px;
+    border-bottom: 1px solid #555;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
