@@ -473,11 +473,13 @@ header{
 .section-price--plans{
     display: flex;
     flex-direction: row;
-    justify-content: center;    
+    justify-content: center; 
+    margin-bottom: 50px;   
 }
 .section-price--plan{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
+    justify-content: center;  
     text-align: center;
     background-color: #fff;
     width: 200px;
@@ -515,3 +517,58 @@ header{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.section-price--plan .button{
+    background-color: #555;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: fit-content;  
+}
+.section-price--plan .button.active{    
+    background-color: #b28756;
+}
+.section-price--details{
+    background-color: #fff;
+    padding-top: 50px;    
+    text-align: center;
+}
+.section-price--details .sliders{
+    width: 1000vw;
+    height: 100%;
+}
+.section-price--details .sliders-pointers{
+    margin-top: 30px;
+    height: 20px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-price--details .pointer{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #b28756;
+    background-color: transparent;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.section-price--details .pointer.active{
+    background-color: #b28756;
+}
+.section-price--details .slide{
+    width: 1140px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.section-price--details .slidearea{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+.section-price--details .slidearea .content{
+    display: flex;
+    flex-direction: row;
+}
+
