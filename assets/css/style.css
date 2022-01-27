@@ -528,8 +528,10 @@ header{
 }
 .section-price--details{
     background-color: #fff;
-    padding-top: 50px;    
-    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;    
+    text-align: center;    
+
 }
 .section-price--details .sliders{
     width: 1000vw;
@@ -557,6 +559,7 @@ header{
 }
 .section-price--details .slide{
     width: 1140px;
+    padding-bottom: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .section-price--details .slidearea{
@@ -564,11 +567,48 @@ header{
     flex-direction: column;
     height: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
     color: #000;
 }
 .section-price--details .slidearea .content{
     display: flex;
     flex-direction: row;
 }
-
+.section-price--details .image{
+    flex: 1;
+    height: 320px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.section-price--details .image img{
+    height: 90%;
+    width: auto;
+}
+.section-price--details .features{
+    flex: 1;    
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+}
+.section-price--details .feature-title{
+    display: flex;
+    align-items: center;
+    font-size: 1.53rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.section-price--details .feature-title img{
+    margin-right: 20px;    
+}
+.section-price--details .feature-desc{
+    margin-left: 53px;
+    margin-bottom: 25px;
+    color: #999;
+}
+.section-price--details .feature-desc ul, 
+.section-price--details .feature-desc li{
+    margin-top: 10px;    
+    list-style: none;
+}
