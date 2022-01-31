@@ -612,3 +612,94 @@ header{
     margin-top: 10px;    
     list-style: none;
 }
+/*Some Facts*/
+.section-facts{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+    justify-content: center;
+}
+.section-facts .fact{
+    width: 220px;
+    height: 190px;
+    padding: 5px;
+    margin-right: 80px;    
+    text-align: center;    
+}
+.section-facts .fact:last-child{
+    margin-right: 0;
+}
+.section-facts .fact .number{
+    color: #b28756;
+    font-size: 3.0rem;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.section-facts .fact .trace{    
+    width: 20px;
+    height: 5px;
+    background-color: #555;
+    margin: auto;    
+    margin-bottom: 10px;
+}
+.section-facts .fact .title{
+    text-transform: uppercase;
+    font-size: 1.04rem;
+    font-weight: bold;    
+    height: 50px;
+}
+.section-facts .fact .description{    
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    font-weight: bold;
+}
+.section-tell-about-us {
+    background-color: #fff;
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.section-tell-about-us .social-media{
+    height: 50px;
+    display: flex;    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+.section-tell-about-us .social-media .share{
+    margin-right: 8px;
+}
+.section-tell-about-us .social-media .twitter,
+.linkedin,
+.facebook,
+.googleplus,
+.pinterest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;    
+    margin-left: 30px;
+    margin-right: 5px;    
+}
+.section-tell-about-us .social-media .desc{
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 600;
+}
+.section-tell-about-us .social-media .twitter{
+    background-color: #34c5f1;
+}
+.section-tell-about-us .social-media .linkedin{
+    background-color: #117cb2;
+}
+.section-tell-about-us .social-media .facebook{
+    background-color: #336296;
+}
+.section-tell-about-us .social-media .googleplus{
+    background-color: #e64238;  
+}
+.section-tell-about-us .social-media .pinterest{
+    background-color: #b81d2b;
+}
