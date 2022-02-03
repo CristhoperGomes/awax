@@ -703,3 +703,124 @@ header{
 .section-tell-about-us .social-media .pinterest{
     background-color: #b81d2b;
 }
+/*Contact-us*/
+.section-contact-us .contact{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;    
+    margin: auto;    
+}
+.section-contact-us .contact form{
+    margin: auto;
+    width: inherit;
+    display: flex;   
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section-contact-us .contact input,
+.section-contact-us .contact textarea{
+    border: none;
+    background-color: inherit;
+    border-bottom: 1px solid #ccc;
+}
+.section-contact-us .contact textarea{
+    resize: none;
+}
+.section-contact-us .contact input:focus,
+.section-contact-us .contact textarea:focus{
+    outline: 0;
+}
+.section-contact-us .contact .fields{
+    display: flex;
+    flex-direction: column;
+    height: 40px;    
+    margin-bottom: 20px;
+    justify-content: space-between;      
+}
+.section-contact-us .contact .fields.textarea{
+    height: 100px;
+}
+.section-contact-us .contact .fields:last-child{
+    margin-top: 40px;
+    height: 100px;
+}
+.section-contact-us .contact .fields label{
+    order: 1;
+    margin-bottom: -15px;    
+}
+.section-contact-us .contact .fields input,
+.section-contact-us .contact textarea{
+    order: 2;
+    margin-bottom: 0;    
+}
+.section-contact-us .contact #name, 
+.section-contact-us .contact #email{
+    width: 280px;            
+}
+.section-contact-us .contact #subject,
+.section-contact-us .contact #message{
+    width: 600px;
+}
+.section-contact-us .contact .fields textarea{
+    height: 90px;
+}
+
+.section-contact-us .contact .fields input:focus + label{       
+    margin-bottom: 10px;
+    font-size: 0.76rem;
+    transition: 0.3s ease-out;
+}
+.section-contact-us .contact .fields textarea:focus + label{
+    margin-bottom: 10px;
+    font-size: 0.76rem;
+    transition: 0.3s ease-out;
+}
+.section-contact-us .contact .fields input:not(:placeholder-shown) + label {
+    margin-bottom: 10px;
+    font-size: 0.76rem;
+}
+.section-contact-us .contact .button{
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+}
+/*Section Map*/
+.section-map{
+    background-image: url('../images/mapa.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.section-map--area{
+    width: 100vw;
+    max-width: 1140px;
+    margin: auto;
+}
+.section-map--info{
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+    color: #555;
+}
+.section-map--info-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.section-map--info-item-img{
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    padding: 5px;
+    background-color: #999;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.section-map--info-item-img img{
+    width: 15px;
+    height: auto;
+}
